@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7F0A2D68-926C-4C30-AD6B-E0290D820978}</ProjectGuid>
+    <ProjectGuid>{ACE3A073-FFC8-44A2-AD2C-C83EC25DA9AD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -168,26 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ActivitiesController.cs" />
-    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Identity\201701300043437_FirstMigration.cs" />
-    <Compile Include="Migrations\Identity\201701300043437_FirstMigration.Designer.cs">
-      <DependentUpon>201701300043437_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Identity\201701310140478_FirstMigration1.cs" />
-    <Compile Include="Migrations\Identity\201701310140478_FirstMigration1.Designer.cs">
-      <DependentUpon>201701310140478_FirstMigration1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Identity\201701310251408_SecondMigration.cs" />
-    <Compile Include="Migrations\Identity\201701310251408_SecondMigration.Designer.cs">
-      <DependentUpon>201701310251408_SecondMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Identity\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -195,15 +180,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\ZenithSociety.mdf" />
-    <Content Include="App_Data\ZenithSociety_log.ldf">
-      <DependentUpon>ZenithSociety.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Docs\MigrationCmds.txt" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -254,21 +233,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Activities\Create.cshtml" />
-    <Content Include="Views\Activities\Delete.cshtml" />
-    <Content Include="Views\Activities\Details.cshtml" />
-    <Content Include="Views\Activities\Edit.cshtml" />
-    <Content Include="Views\Activities\Index.cshtml" />
-    <Content Include="Views\Events\Create.cshtml" />
-    <Content Include="Views\Events\Delete.cshtml" />
-    <Content Include="Views\Events\Details.cshtml" />
-    <Content Include="Views\Events\Edit.cshtml" />
-    <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -276,20 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZenithDataLib\ZenithDataLib.csproj">
-      <Project>{5367A7C4-90DE-46D7-B8CF-485E93CBA979}</Project>
+      <Project>{5367a7c4-90de-46d7-b8cf-485e93cba979}</Project>
       <Name>ZenithDataLib</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\Identity\201701300043437_FirstMigration.resx">
-      <DependentUpon>201701300043437_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\Identity\201701310140478_FirstMigration1.resx">
-      <DependentUpon>201701310140478_FirstMigration1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\Identity\201701310251408_SecondMigration.resx">
-      <DependentUpon>201701310251408_SecondMigration.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -307,7 +268,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52022</DevelopmentServerPort>
+          <DevelopmentServerPort>60819</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:52022/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

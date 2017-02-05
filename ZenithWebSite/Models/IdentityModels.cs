@@ -3,7 +3,6 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using ZenithDataLib.Models;
 
 namespace ZenithWebSite.Models
 {
@@ -25,11 +24,6 @@ namespace ZenithWebSite.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
-        // Connection to entities. 
-        public DbSet<Activity> Activities { get; set; } 
-        public DbSet<Event> Events { get; set; }
-
 
         public static ApplicationDbContext Create()
         {

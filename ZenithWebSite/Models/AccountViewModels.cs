@@ -49,13 +49,8 @@ namespace ZenithWebSite.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "User Name")]
-        public string UserName { get; set; }
-
-        // I dont think i need this
-        [Required]
-        [EmailAddress]
         [Display(Name = "Email")]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
@@ -69,18 +64,6 @@ namespace ZenithWebSite.Models
 
     public class RegisterViewModel
     {
-        [Required]
-        [Display(Name = "User Name")]
-        public string UserName { get; set; }
-
-        [Required]
-        [Display(Name = "First Name")]
-        public string FirstName { get; set; }
-
-        [Required]
-        [Display(Name = "Last Name")]
-        public string LastName { get; set; }
-
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
