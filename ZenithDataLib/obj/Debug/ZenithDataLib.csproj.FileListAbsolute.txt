@@ -13,3 +13,11 @@ C:\riphub\ZenithDataLib\bin\Debug\EntityFramework.dll
 C:\riphub\ZenithDataLib\bin\Debug\EntityFramework.xml
 C:\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.dll
 C:\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.pdb
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\ZenithDataLib.dll.config
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\ZenithDataLib.dll
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\ZenithDataLib.pdb
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\EntityFramework.dll
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\EntityFramework.xml
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.csprojResolveAssemblyReference.cache
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.dll
+C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.pdb
