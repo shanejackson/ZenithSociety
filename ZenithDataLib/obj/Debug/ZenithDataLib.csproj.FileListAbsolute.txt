@@ -21,3 +21,16 @@ C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\bin\Debug\EntityFramework.x
 C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.csprojResolveAssemblyReference.cache
 C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.dll
 C:\Users\rshel\Dropbox\BCIT\asp\riphub\ZenithDataLib\obj\Debug\ZenithDataLib.pdb
+C:\ZenithAsn\ZenithDataLib\bin\Debug\ZenithDataLib.dll.config
+C:\ZenithAsn\ZenithDataLib\bin\Debug\ZenithDataLib.dll
+C:\ZenithAsn\ZenithDataLib\bin\Debug\ZenithDataLib.pdb
+C:\ZenithAsn\ZenithDataLib\bin\Debug\EntityFramework.dll
+C:\ZenithAsn\ZenithDataLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\ZenithAsn\ZenithDataLib\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ZenithAsn\ZenithDataLib\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ZenithAsn\ZenithDataLib\bin\Debug\EntityFramework.xml
+C:\ZenithAsn\ZenithDataLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\ZenithAsn\ZenithDataLib\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ZenithAsn\ZenithDataLib\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ZenithAsn\ZenithDataLib\obj\Debug\ZenithDataLib.dll
+C:\ZenithAsn\ZenithDataLib\obj\Debug\ZenithDataLib.pdb

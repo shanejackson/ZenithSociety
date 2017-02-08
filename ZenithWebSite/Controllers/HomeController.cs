@@ -17,11 +17,15 @@ namespace ZenithWebSite.Controllers
         {
             //using System.Data.Entity; must be including for (a=>a) to work 
             //var today = new DateTime(today.Year, today.Month, today.Day);
-            var today = new DateTime(2017, 04, 03);
-            var last = new DateTime(2017, 04, 09);
+           // var today = new DateTime(2017, 02, 13);
+
+            DateTime today = DateTime.Today;
+            DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek);
+            DateTime endOfWeek = startOfWeek.AddDays(8);
+
 
             var activities = db.Activities.Include(a => a.Events)
-                                .Where(a => a.Events.Any(b => b.EventFrom >= today && b.EventFrom <= last && b.IsActive == true))
+                                .Where(a => a.Events.Any(b => b.EventFrom >= startOfWeek && b.EventTo <= endOfWeek && b.IsActive == true))
                                 .Select(a => a);
             return View(activities.ToList());
 
