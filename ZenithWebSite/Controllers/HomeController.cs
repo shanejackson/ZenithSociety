@@ -23,12 +23,14 @@ namespace ZenithWebSite.Controllers
             DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek);
             DateTime endOfWeek = startOfWeek.AddDays(8);
 
-
             var activities = db.Activities.Include(a => a.Events)
                                 .Where(a => a.Events.Any(b => b.EventFrom >= startOfWeek && b.EventTo <= endOfWeek && b.IsActive == true))
                                 .Select(a => a);
-            return View(activities.ToList());
 
+            ViewBag.DateFormat = "{0:dddd MMMM dd, yyyy}";
+            ViewBag.TimeFormat = "{0:h:mm tt}";
+
+            return View(activities.ToList());
 
         }
 

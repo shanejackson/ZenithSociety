@@ -3,6 +3,7 @@
 
 @{
     ViewBag.Title = "Home Page";
+    var currentDate = "";
 }
 
 <div class="jumbotron">
@@ -11,26 +12,46 @@
 </div>
 
 <table class="table">
+    <!--
     <tr>
-        <th>
+        <th colspan="2">
             Date
         </th>
     </tr>
+    -->
 
-    @foreach (var item in Model)
-    {
-        foreach (var element in item.Events)
-        {
+
+@foreach (var item in Model) {
+    foreach (var element in item.Events) {
+        if (currentDate == "") {
+            currentDate = String.Format(ViewBag.DateFormat, element.EventFrom);
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => element.EventTo)  
-                    @Html.DisplayFor(modelItem => element.EventFrom)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
+                <th colspan="2">
+                    @String.Format(ViewBag.DateFormat, element.EventFrom)
+                </th>
             </tr>
         }
+
+        if (currentDate != String.Format(ViewBag.DateFormat, element.EventFrom)) {
+            currentDate = String.Format(ViewBag.DateFormat, element.EventFrom);
+            <tr>
+                <th colspan="2">
+                    @String.Format(ViewBag.DateFormat, element.EventFrom)
+                </th>
+            </tr>
+        }
+        <tr>
+            <td>
+                @String.Format(ViewBag.TimeFormat, element.EventFrom) - @String.Format(ViewBag.TimeFormat, element.EventTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+        </tr>
     }
+}
+
+
+
 
 </table>
